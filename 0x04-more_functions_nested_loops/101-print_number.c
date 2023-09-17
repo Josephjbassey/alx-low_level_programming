@@ -4,8 +4,6 @@
  * print_number - Prints an integer
  * @n: The integer to be printed
  *
- * Description: This function takes an integer as input and prints it.
- * If the integer is negative, it prints a '-' sign before the number.
  */
 void print_number(int n)
 {
