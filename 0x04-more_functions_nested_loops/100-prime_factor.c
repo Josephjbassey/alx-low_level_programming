@@ -25,7 +25,7 @@ int main(void)
 			largestPrime = i;
 			number /= i;
 		}
-		i +=2;
+		i += 2;
 	}
 
 	if (number > 2)
