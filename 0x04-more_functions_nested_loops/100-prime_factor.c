@@ -9,8 +9,8 @@
 int main(void)
 {
 	long int number = 612852475143;
-	int largestPrime = -1;
-	int i = 3;
+	long int largestPrime = -1;
+	long int i = 3;
 
 	while (number % 2 == 0)
 	{
@@ -18,20 +18,21 @@ int main(void)
 		number /= 2;
 	}
 
-	for (i <= sqrt(number); i += 2)
+	while (i <= sqrt(number))
 	{
 		while (number % i == 0)
 		{
 			largestPrime = i;
 			number /= i;
 		}
+		i +=2;
 	}
 
 	if (number > 2)
 	{
 		largestPrime = number;
 	}
-	printf("%lld\n", largestPrime);
+	printf("%ld\n", largestPrime);
 
 	return (0);
 }
